@@ -65,9 +65,28 @@ Berikut adalah function utama yang umum digunakan dalam **Socket API** (POSIX / 
     - C++ Fundamental (Input/Output, Tipe Data, Casting, Percabangan, Perulangan, Preprocessor, dll).
     - Networking (TCP/UDP, IP address, port).
 
+## 📚 Learn Socket Networking
+
+###  Windows
+1. [TCP socket connection](https://github.com/MuzakyGood/Belajar_CppSocket/tree/main/Windows/1.TCPConnection)
+2. [HTTP socket connection](https://github.com/MuzakyGood/Belajar_CppSocket/tree/main/Windows/2.HTTPConnection)
+3. [UDP socket connection](https://github.com/MuzakyGood/Belajar_CppSocket/tree/main/Windows/3.UDPConnection)
+
+### Linux / MacOS
+
+🔒 Coming Soon
+
+---
+
+## 📁 Project Socket Networking
+
+🔒 Coming Soon
+
+---
+
 ## ⚙️ Cara compile C++
 
-#### Linux / macOS
+#### Linux / MacOS
 ```bash
 g++ src/tcp_server.cpp -o server
 g++ src/tcp_client.cpp -o client
