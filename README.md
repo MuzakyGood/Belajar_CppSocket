@@ -67,20 +67,18 @@ Berikut adalah function utama yang umum digunakan dalam **Socket API** (POSIX / 
 
 ## 📚 Learn Socket Networking
 
-###  Windows
+- ### Windows:
 1. [TCP socket connection](https://github.com/MuzakyGood/Belajar_CppSocket/tree/main/Windows/1.TCPConnection)
 2. [HTTP socket connection](https://github.com/MuzakyGood/Belajar_CppSocket/tree/main/Windows/2.HTTPConnection)
 3. [UDP socket connection](https://github.com/MuzakyGood/Belajar_CppSocket/tree/main/Windows/3.UDPConnection)
 
-### Linux / MacOS
-
-🔒 Coming Soon
-
----
+- ### Linux / MacOS (🔒Coming Soon)
 
 ## 📁 Project Socket Networking
 
-🔒 Coming Soon
+- ### Windows (🔒Coming Soon)
+
+- ### Linux / MAcOS (🔒Coming Soon)
 
 ---
 
@@ -107,15 +105,6 @@ g++ src/tcp_client.cpp -lws2_32 -o client.exe
 * Menambahkan **enkripsi** sederhana (misalnya AES atau TLS).
 * Membuat protokol sederhana di atas TCP (misalnya chat room).
 * Menambahkan **logging** untuk debugging.
-
-## 📚 Referensi
-
-* [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/)
-* [C++ Reference - Networking (POSIX Sockets)](https://en.cppreference.com/w/cpp/header)
-* Dokumentasi resmi:
-
-  * [Windows Winsock2](https://learn.microsoft.com/en-us/windows/win32/winsock/windows-sockets-start-page)
-  * [Linux man pages: socket(2)](https://man7.org/linux/man-pages/man2/socket.2.html)
 
 ## 🏷️ Lisensi
 
