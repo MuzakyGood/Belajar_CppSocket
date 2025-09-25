@@ -16,7 +16,7 @@ Socket berfungsi sebagai **abstraksi pemrograman** untuk melakukan komunikasi an
 2. **Presentation Layer** – encoding, enkripsi, kompresi.
 3. **Session Layer** – menjaga sesi komunikasi (sinkronisasi).
 4. **Transport Layer** – mengatur aliran data, segmentasi, reliabilitas (TCP/UDP).
-5. **Network Layer** – routing dan pengalamatan (IP).
+5. **Network Layer** – routing dan pengalamatan (IP Address).
 6. **Data Link Layer** – komunikasi antar perangkat dalam satu jaringan (Ethernet, Wi-Fi).
 7. **Physical Layer** – media fisik (kabel, sinyal, radio).
 
@@ -33,22 +33,22 @@ Berikut adalah function utama yang umum digunakan dalam **Socket API** (POSIX / 
 | Function            | Deskripsi                                                                 |
 |---------------------|---------------------------------------------------------------------------|
 | `socket()`          | Membuat socket baru (menentukan domain, type, protocol).                  |
-| `bind()`            | Mengikat socket ke alamat IP dan port tertentu.                          |
+| `bind()`            | Mengikat socket ke IP Address dan port tertentu.                          |
 | `listen()`          | Menandai socket agar siap menerima koneksi (khusus TCP server).           |
 | `accept()`          | Menerima koneksi dari client pada socket server (blocking).              |
 | `connect()`         | Menghubungkan socket client ke server tertentu.                          |
 | `send()`            | Mengirim data melalui socket (TCP).                                       |
 | `recv()`            | Menerima data dari socket (TCP).                                          |
-| `sendto()`          | Mengirim data ke alamat tertentu (digunakan untuk UDP).                  |
-| `recvfrom()`        | Menerima data dari alamat tertentu (digunakan untuk UDP).                |
+| `sendto()`          | Mengirim data ke IP Address tertentu (digunakan untuk UDP).                  |
+| `recvfrom()`        | Menerima data dari IP Address tertentu (digunakan untuk UDP).                |
 | `close()` / `closesocket()` | Menutup koneksi socket. (`close` di Linux/Unix, `closesocket` di Windows). |
 | `shutdown()`        | Menutup sebagian koneksi (misalnya hanya read atau hanya write).         |
 | `getsockopt()`      | Mendapatkan opsi atau konfigurasi dari socket.                           |
 | `setsockopt()`      | Mengatur opsi atau konfigurasi socket (misalnya `SO_REUSEADDR`).          |
-| `getaddrinfo()`     | Resolusi nama host ke alamat IP dan parameter socket.                    |
+| `getaddrinfo()`     | Resolusi nama host ke IP Address dan parameter socket.                    |
 | `freeaddrinfo()`    | Membebaskan memori hasil `getaddrinfo()`.                                |
-| `inet_pton()`       | Mengonversi alamat IP dari teks ke biner.                                |
-| `inet_ntop()`       | Mengonversi alamat IP dari biner ke teks.                                |
+| `inet_pton()`       | Mengonversi IP Address dari teks ke biner.                                |
+| `inet_ntop()`       | Mengonversi IP Address dari biner ke teks.                                |
 
 > **Catatan:** Pada **Windows (Winsock)**, sebelum menggunakan fungsi socket, perlu inisialisasi dengan `WSAStartup()`, dan diakhiri dengan `WSACleanup()`. Perlu menutup juga dengan `closesocket();`.
 
