@@ -6,6 +6,7 @@
 // If you use mingw you need to add -lws2_32 flag when compile c++ code.
 
 int main() {
+    // Declaration data type
     int serverAddrSize, bytesReceived;
     std::string message;
     std::array<char, 1024> buffer;
@@ -34,7 +35,7 @@ int main() {
         return -1;
     }
 
-    // Configuration address server
+    // Configuration IP address server
     serverSocket.sin_family = AF_INET;
     serverSocket.sin_port = htons(9090);
     serverSocket.sin_addr.s_addr = inet_addr("127.0.0.1");

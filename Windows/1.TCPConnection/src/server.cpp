@@ -34,7 +34,7 @@ int main() {
         return 1;
     }
 
-    // Configuration server address
+    // Configuration server IP address
     server.sin_family = AF_INET;
     server.sin_addr.s_addr = INADDR_ANY;
     server.sin_port = htons(9090); 
