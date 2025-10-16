@@ -71,6 +71,7 @@ Berikut adalah function utama yang umum digunakan dalam **Socket API** (POSIX / 
 1. [TCP socket connection](https://github.com/MuzakyGood/Belajar_CppSocket/tree/main/Windows/1.TCPConnection)
 2. [HTTP socket connection](https://github.com/MuzakyGood/Belajar_CppSocket/tree/main/Windows/2.HTTPConnection)
 3. [UDP socket connection](https://github.com/MuzakyGood/Belajar_CppSocket/tree/main/Windows/3.UDPConnection)
+4. [Rest API connection](https://github.com/MuzakyGood/Belajar_CppSocket/tree/main/Windows/4.RestAPIConnection)
 
 - ### Linux / MacOS (🔒Coming Soon)
 
